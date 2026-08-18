@@ -1,0 +1,13 @@
+# Deliberation notes — "is this item worth buying", budget and trade decisions.
+# Kept local: they go stale fast and record in-game wealth tied to a public account.
+considering/
+
+# Raw exports and scratch dumps (PoB, poe.ninja, trade data).
+# Trade auth material must never be committed.
+*.json
+*.txt
+
+.DS_Store
+
+.env
+.claude/settings.local.json
