@@ -89,10 +89,10 @@ Working notes live under `considering/`, which is gitignored and local-only.
 
 ## Open points
 
-- **Storm Driven is one node away and free.** The Life Recoup small (node 54194, 4% of Damage taken Recouped as Life) is still allocated and returns nothing into a 1-life pool. Refunding it and taking Storm Driven moves elemental-damage-to-ES recoup from 9% to 24% at zero net point cost. Find it with the in-game tree search for `Recouped as Life` — the MCP's node coordinates are group-level and demonstrably wrong. Details in `considering/defence.md`.
+- **Storm Driven is one node away.** Taking it moves elemental-damage-to-ES recoup from 9% to 24% for a single passive point. There is no dead node to fund it from, so the point has to come from somewhere — the six Mana Regeneration smalls are the documented over-investment. Details in `considering/defence.md`.
 - The respec that bought the three Energy Shield Recoup smalls paid for it with Rapid Recharge and an Energy Shield Delay small, so **faster start of Energy Shield Recharge went 40% -> 0%**. Buy it back on gear (*of Anticipation*, 51–55% on one suffix) rather than re-specing into it — the tree is the only dense source of recoup, and gear is the cheap source of delay reduction.
 - **Sigil of Power is gone with the weapon swap, and it was large.** At gem level 19 it gives roughly 13–14% *more* spell damage per stage to a maximum of 4 stages — on the order of **x1.5 or better while standing in it**, which dwarfs the entire staff upgrade. Uptime was always partial while mapping (10s duration, 10s cooldown, a 30-radius circle, stages bought with mana) but near-full on a boss. The only way to keep it on one weapon set is a **Chiming Staff** main hand, whose implicit grants it. Worth deciding deliberately rather than by default.
-- The tree's lightning nodes are dead now that Spark is gone, but **they do not turn into a spare point.** The weapon-set system only divides already-allocated passives between the two sets; there is no separate set-2 allotment to fold back into set 1. Storm Driven needs exactly one point and the dead Life Recoup small supplies it, so nothing is blocked.
+- The tree's lightning nodes are dead now that Spark is gone, but **they do not turn into a spare point.** The weapon-set system only divides already-allocated passives between the two sets; there is no separate set-2 allotment to fold back into set 1.
 - Crit chance on the trigger skills is the main lever for CoC uptime — worth checking whether Frost Darts or Frostbolt is actually driving more triggers.
 - **Resolved:** an item-granted Sigil of Power *does* take support gems — it ran with Cooldown Recovery II and Magnified Area II off the Pain Mast implicit. So a Chiming Staff main hand would carry it fully supported.
 
@@ -100,5 +100,5 @@ Working notes live under `considering/`, which is gitignored and local-only.
 
 - poe.ninja's import caps every item at **five displayed lines**, and rune lines eat that budget. Always use a PoB export for gear comparisons.
 - Never hand-compute damage: use `calculate_character_dps`. A remembered Path of Exile 1 constant for gem-level scaling (x1.04 against the measured x1.1525) once reversed a rune recommendation.
-- The MCP's local passive tree does not resolve every allocated node — the 2026-08-23 import reported **11 of 128 allocated nodes absent** from `tree.json`. Tree-completeness claims need that caveat.
+- **The MCP's passive tree data cannot be trusted for identifying a specific node.** Its coordinates are group-level rather than per-node, the 2026-08-23 import reported 11 of 128 allocated nodes absent from `tree.json`, and it resolved node 54194 to a "Life Recoup" small that does not exist on this tree at all. Node names and stats need in-game confirmation before acting on them.
 - There is no rune or soul-core data in the MCP at all. Every rune value here came from in-game text.
