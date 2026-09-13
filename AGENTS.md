@@ -43,5 +43,7 @@ When presenting numbers (damage, resistances, ES/life, resistance caps, etc.), s
 ## How to work
 
 - Respond in Japanese. In-game terminology mixes Japanese client wording with English, so pairing them on first mention — e.g. 「アイスノヴァ (Ice Nova)」 — reads better
+- **The game is played on the Japanese client.** Anything intended to be typed or read in game — trade site search filters, mod and affix text, item bases, skill and passive names — must lead with the Japanese client wording, with the English in parentheses. Write filters as the trade site renders them, e.g. 「キャストスピードが#%増加する (increased Cast Speed)」, not as an English mod id
+- MCP data is English-only, so any Japanese client wording is a reconstruction. When a term has not been confirmed against the client or the trade site, say so and give the English alongside it so the filter is still findable
 - For build proposals, be concise and ordered: conclusion (what to take) → reasoning → trade-offs. Prefer giving one recommendation and then touching on alternatives, over enumerating every option
 - If budget or playstyle assumptions are unknown and would change the conclusion, ask. Otherwise proceed on reasonable assumptions and state them explicitly
