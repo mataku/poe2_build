@@ -6,17 +6,23 @@ Files sitting in this repository are work-in-progress fragments and do not descr
 
 ## Assumptions
 
-- Target is **Season 0.5 "Runes of Aldur"**. Reason from this season's mechanics and balance
+- Target is **Season 0.5.5 "Forbidden Rites"** (started 2026-09). Reason from this season's mechanics and balance
 - Purpose is **endgame**. Not league start or leveling — builds are meant for running maps and endgame content
 
 ## My characters
 
-Background on the characters played this season lives under `runes_of_aldur/`, one directory per character. There is no need to read these every session; read the relevant `README.md` when that character comes up.
+Background on the characters lives under `{season}/{character}/`, one directory per character. There is no need to read these every session; read the relevant `README.md` when that character comes up.
+
+Current season, `forbidden_rites/`:
+
+- Stormweaver → `forbidden_rites/stormweaver/README.md` (build still in progress as of 2026-09-13)
+
+Previous season 0.5 "Runes of Aldur", `runes_of_aldur/` — archive, useful for reusable conclusions such as the damage model and MCP caveats:
 
 - Chronomancer → `runes_of_aldur/chronomancer/README.md`
 - Spirit Walker → `runes_of_aldur/spiritwalker/README.md`
 
-Open decisions — "is this weapon worth buying", gear shortlists, budget splits — go in `runes_of_aldur/{character}/considering/`. That directory is gitignored and stays local, because those notes carry prices and budgets that go stale as soon as something is bought. Write new deliberation notes there, not next to the `README.md`. When a decision lands, fold the conclusion into the character's `README.md`.
+Open decisions — "is this weapon worth buying", gear shortlists, budget splits — go in `{season}/{character}/considering/`. That directory is gitignored and stays local, because those notes carry prices and budgets that go stale as soon as something is bought. Write new deliberation notes there, not next to the `README.md`. When a decision lands, fold the conclusion into the character's `README.md`. Committed files must not link to anything under `considering/` or to other gitignored or temporary files; write the conclusion itself into the `README.md` instead.
 
 ## What happens in this repository
 
